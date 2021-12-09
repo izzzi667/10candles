@@ -8,36 +8,63 @@
   height: 6em;
 }
 .circle-container > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(10em) rotate(0deg);
+  transform: rotate(0deg) translate(14em) rotate(0deg);
 }
 .circle-container > *:nth-of-type(2) {
-  transform: rotate(36deg) translate(10em) rotate(-36deg);
+  transform: rotate(36deg) translate(13em) rotate(-36deg);
 }
 .circle-container > *:nth-of-type(3) {
-  transform: rotate(72deg) translate(10em) rotate(-72deg);
+  transform: rotate(72deg) translate(11em) rotate(-72deg);
 }
 .circle-container > *:nth-of-type(4) {
-  transform: rotate(108deg) translate(10em) rotate(-108deg);
+  transform: rotate(108deg) translate(11em) rotate(-108deg);
 }
 .circle-container > *:nth-of-type(5) {
-  transform: rotate(144deg) translate(10em) rotate(-144deg);
+  transform: rotate(144deg) translate(13em) rotate(-144deg);
 }
 .circle-container > *:nth-of-type(6) {
-  transform: rotate(180deg) translate(10em) rotate(-180deg);
+  transform: rotate(180deg) translate(14em) rotate(-180deg);
 }
 .circle-container > *:nth-of-type(7) {
-  transform: rotate(216deg) translate(10em) rotate(-219deg);
+  transform: rotate(216deg) translate(13em) rotate(-219deg);
 }
 .circle-container > *:nth-of-type(8) {
-  transform: rotate(252deg) translate(10em) rotate(-252deg);
+  transform: rotate(252deg) translate(11em) rotate(-252deg);
 }
 .circle-container > *:nth-of-type(9) {
-  transform: rotate(288deg) translate(10em) rotate(-288deg);
+  transform: rotate(288deg) translate(11em) rotate(-288deg);
 }
 .circle-container > *:nth-of-type(10) {
-  transform: rotate(324deg) translate(10em) rotate(-324deg);
+  transform: rotate(324deg) translate(13em) rotate(-324deg);
 }
 .circle-container img {
   display: block;
   max-width: 100%;
 }
+
+body {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(46,14,14,1) 0%, rgba(0,0,0,1) 100%);
+  background-size: 400% 400%;
+	height: 100vh;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	25% {
+		background-position: 100% 100%;
+	}
+  50% {
+		background-position: 0% 0%;
+	}
+  50% {
+		background-position: 50% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
